@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        body{
+            margin:0;
+            background-color: #777;
+        }
+        .navbar{
+            background-color:#333;
+            display:flex;
+            justify-content:space-between;
+            align-items:center; 
+            padding:5px;
+        }
+        .nav-link{
+            color:#fff;
+            text-decoration:none;
+            padding:8px 10px;
+            border-radius:5px;
+            transition:background-color 0.3s ease;
+        }
+        .nav-link:hover{
+            background-color:#555;
+        }
+        .nav-link.active{
+            background-color:#555;
+        }
+        .logo{
+            order:0;
+        }
+        .nav-link:not(:first-child){
+            margin-left:10px;
+        }
+        .div2 {
+            padding: 20px;
+            color:white;
+            width:50%;
+            margin-top:-30px;
+        }
+        .container{
+            
+            display:flex;
+            justify-content: space-around;
+        }
+        .div1{
+            width:40%;
+            height:480px;
+            padding:20px;
+            border-radius:5px;
+            background-image: url('home.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .btn{
+            text-decoration: none;
+            color:white;
+            background-color: goldenrod;
+            height:40px;
+            width:100px;
+            padding: 10px 10px;
+            border-radius:10px;
+            border:1px solid white;
+        }
+        .a{
+            text-decoration: none;
+            color:white;
+        }
+        .btn:hover{
+            background-color: blue;
+        }
+        
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <img src="hostel_logo.jpg" class="nav-link" width="120px" height="50px" class="logo">
+        <div class="nav-links">
+            <a href="Hostel.html" class="nav-link">Home</a>
+            <a href="room-details.php" class="nav-link">Rooms</a>
+            <a href="vacate.php" class="nav-link">Vacate</a>
+            <a href="Food.html" class="nav-link">Food Menu</a>
+            <a href="reviews.php" class="nav-link">Review</a>
+            <a href="logout.php" class="nav-link">Logout</a>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="div1"></div>
+        <div class="div2">
+            <h1>Welcome to Our Hostel</h1>
+            <p>Explore our services and book your stay now!</p>
+            
+            <h2>About Us</h2>
+            <p>We are a premier hostel located in a vibrant city, offering comfortable accommodations and excellent amenities for travelers.</p>
+            
+            <h2>Our Services</h2>
+            <ul>
+                <li>24/7 Front Desk Assistance</li>
+                <li>Free Wi-Fi</li>
+                <li>Spacious Rooms</li>
+                <li>Laundry Services</li>
+                <li>Breakfast Buffet</li>
+            </ul>
+            
+            <h2>Book Your Stay</h2>
+            <p>Ready to experience our hospitality? Book your room now and enjoy a memorable stay at our hostel!</p>
+            <button class="btn"><a href="room-details.php" class="a">Book Now</a></button>
+        </div>
+    </div><br>
+</body>
+</html>

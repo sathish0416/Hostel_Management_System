@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin:0;
+        }
+        .navbar{
+            background-color:#444;
+            display:flex;
+            justify-content:space-between;
+            align-items:center; 
+            padding:5px;
+        }
+        .nav-link{
+            color:#fff;
+            text-decoration:none;
+            padding:8px 10px;
+            border-radius:5px;
+            transition:background-color 0.3s ease;
+        }
+        .nav-link:hover{
+            background-color:#555;
+        }
+        .nav-link.active{
+            background-color:#555;
+        }
+        .logo{
+            order:0;
+        }
+        .nav-link:not(:first-child){
+            margin-left:10px;
+        }
+        table {
+            width: 50%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+
+        caption {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <img src="hostel_logo.jpg" class="nav-link" width="120px" height="50px" class="logo">
+        <div class="nav-links">
+            <a href="Hostel.html" class="nav-link">Home</a>
+            <a href="rooms.html" class="nav-link">Rooms</a>
+            <a href="vacate.php" class="nav-link">Vacate</a>
+            <a href="Food.html" class="nav-link">Food Menu</a>
+            <a href="reviews.php" class="nav-link">Review</a>
+            <a href="logout.php" class="nav-link">Logout</a>
+        </div>
+    </nav>
+    <table border="1" cellspacing="0" cellpadding="8">
+        <caption style="font-size:20px"><b>Menu card</b></caption><br>
+        <tr>
+            <th>Day</th>
+            <th>BreakFast</th>
+            <th>Lunch</th>
+            <th>Snacks</th>
+            <th>Dinner</th>
+        </tr>
+        <tr>
+            <td>Monday</td>
+            <td>Bread and jam,Sprouts,Sweet Semiya</td>
+            <td>Salad,Rice,Roti,Dal</td>
+            <td>Cupcake</td>
+            <td>Rice,Roti,Egg curry,Badam milk</td>
+        </tr>
+        <tr>
+            <td>Tuesday</td>
+            <td>Mix uttapam,upma</td>
+            <td>Aloo,Gobi,Dal tadka,Dahi</td>
+            <td>Pastries</td>
+            <td>Panner,Rasmalai,Mix veg,Pasta</td>
+        </tr>
+        <tr>
+            <td>Wednesday</td>
+            <td>Cutlet,Boiled eggs,Sweet corn</td>
+            <td>Kadhi pakoda,Aloo Soyabean</td>
+            <td>Puffs</td>
+            <td>Kheer,Mix parantha,Chole masala</td>
+        </tr>
+        <tr>
+            <td>Thrusday</td>
+            <td>Poha,Daliya,Fruit</td>
+            <td>Paneer/Egg bhruji,Black masoor,Dahi</td>
+            <td>Noodles</td>
+            <td>Soup,Manchurian fried rice,Gulab Jam</td>
+        </tr>
+        <tr>
+            <td>Friday</td>
+            <td>Vada,Idli,Cornflakes</td>
+            <td>Rajma,Jeera rice,Dahi,Aloo methi</td>
+            <td>Samosa</td>
+            <td>Biryani,Barfi,Aloo chole</td>
+        </tr>
+        <tr>
+            <td>Saturday</td>
+            <td>Puri,Daliya,Kala chana</td>
+            <td>Kichidi,Palak,Butter dal,Papad</td>
+            <td>Pani puri</td>
+            <td>Matar/Kadhai paneer,Semiya,Dal arhar</td>
+        </tr>
+        <tr>
+            <td>Sunday</td>
+            <td>Bread pakoda,Sprouts,Masala oats</td>
+            <td>Chole,Chicken biryani,Roti</td>
+            <td>Juice</td>
+            <td>Halwa,Pav bhaji,Soup,Aloo kachori</td>
+        </tr>
+    </table>
+</body>
+</html>
